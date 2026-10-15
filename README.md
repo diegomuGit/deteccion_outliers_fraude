@@ -4,11 +4,14 @@ Taller de detección de anomalías (MIAX). Se entrena un modelo de mezcla gaussi
 sobre datos normales y se usa el log-likelihood como score de anomalía, evaluándolo
 sobre un conjunto de test y visualizándolo con una proyección PCA 2D.
 
-## Contenido
+## Estructura
 
-- `taller_detección_anomalías.ipynb`: notebook con el análisis.
-- `taller_anomalías.pdf`: enunciado del taller.
-- `credit_card_construction.csv.zip`, `credit_card_production.csv.zip`: datos.
+```
+data/        datos (zips con los CSV; los CSV descomprimidos se ignoran en git)
+notebooks/   notebook con el análisis
+enunciado/   PDF del taller
+source/      código fuente reutilizable (vacío por ahora)
+```
 
 ## Uso
 
@@ -16,7 +19,7 @@ sobre un conjunto de test y visualizándolo con una proyección PCA 2D.
 python -m venv .venv
 .venv\Scripts\activate      # Windows
 pip install -r requirements.txt
-jupyter notebook
+jupyter notebook notebooks/
 ```
 
-Descomprime los `.zip` en la carpeta del proyecto si el notebook espera los CSV.
+El notebook descarga/descomprime los datos en `data/` (ruta relativa `../data`).
