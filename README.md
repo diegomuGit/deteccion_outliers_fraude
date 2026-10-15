@@ -1,8 +1,6 @@
 # Detección de outliers en fraude con tarjetas de crédito
 
-Taller de detección de anomalías (MIAX). Se entrena un modelo de mezcla gaussiana (GMM)
-sobre datos normales y se usa el log-likelihood como score de anomalía, evaluándolo
-sobre un conjunto de test y visualizándolo con una proyección PCA 2D.
+Taller de detección de anomalías (MIAX) sobre datos de transacciones con tarjeta de crédito.
 
 ## Estructura
 
@@ -22,4 +20,4 @@ pip install -r requirements.txt
 jupyter notebook notebooks/
 ```
 
-El notebook descarga/descomprime los datos en `data/` (ruta relativa `../data`).
+Los datos se leen desde `data/`; descomprime los `.zip` allí si hace falta.
