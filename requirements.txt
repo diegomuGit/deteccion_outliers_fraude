@@ -7,3 +7,6 @@ tqdm
 ipython
 jupyter
 nbformat
+catboost>=1.2
+xgboost>=2.1
+lightgbm>=4.7
